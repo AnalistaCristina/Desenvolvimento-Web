@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lumière Beauté — Clínica de Estética</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <aside id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-simbolo">
+          LB
+          <circle cx="12" cy="9" r="2.5"/> 
+        </div>
+        <div class="logo-name">Lumière Beauté</div>
+        <div class="logo-tagline">Clínica de Estética</div>
+      </div>
+
+      <nav>
+  
+        <a href="index.html">Início </a>
+        <a href="quesomos.html">Quem Somos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="agendaConsulta.html">Contato </a>
+      </nav>
+
+      <div class="sidebar-footer">© 2025 Lumière Beauté</div>
+    </aside>
+
+    <!-- MAIN -->
+    <div id="main">
+      <div class="topbar">
+        <span class="topbar-title" id="topbar-title">Bem-vinda à Lumière Beauté</span>
+        <div class="topbar-actions">
+          <button class="btn-agend" onclick="agconsulta()">Agendar Consulta</button>
+        </div>
+      </div>
+
+      <div class="page active" id="page-inicio">
+        <div class="hero">
+          <div class="hero-badge">✦ Bem-vinda</div>
+          <h1>Realce sua beleza com<br><span>cuidado e sofisticação</span></h1>
+          <p>Na Lumière Beauté, cada tratamento é pensado para revelar a melhor versão de você — com técnicas avançadas e atendimento exclusivo.</p>
+          <div class="hero-btns">
+            <button class="btn-white" onclick="servicos()">Nossos Serviços</button>
+            <button class="btn-outline-w" onclick="agconsulta()">Agendar Agora</button>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Tratamentos Faciais</h3>
+            <p>Protocolos personalizados para rejuvenescimento, hidratação e luminosidade.</p>
+            <img src="imagem/servico2.jpg"  alt="" class="foto-perfil">
+          </div>
+          <div class="card">
+            <h3>Estética Corporal</h3>
+            <p>Modelagem, drenagem e tratamentos para contorno e bem-estar do corpo.</p>
+            <img src="imagem/servico1.jpg" class="foto-perfil" alt="">
+          </div>
+          <div class="card">
+            <h3>Profissionais Certificadas</h3>
+            <p>Equipe especializada com formação contínua e paixão pelo que faz.</p>
+            <img src="imagem/profissional.png" alt="" class="foto-perfil">
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card"><div class="stat-num">+2.400</div><div class="stat-label">Clientes atendidas</div></div>
+          <div class="stat-card"><div class="stat-num">98%</div><div class="stat-label">Satisfação</div></div>
+          <div class="stat-card"><div class="stat-num">12</div><div class="stat-label">Especialistas</div></div>
+          <div class="stat-card"><div class="stat-num">8 anos</div><div class="stat-label">De experiência</div></div>
+        </div>
+      </div>
+
+
+    </div><!-- /main -->
+
+  <script src="funcao.js"></script>
+</body>
+</html>

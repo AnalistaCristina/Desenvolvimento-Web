@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Lumière Beauté — Clínica de Estética</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+    <aside id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-simbolo">
+          LB
+          <circle cx="12" cy="9" r="2.5" />
+        </div>
+        <div class="logo-name">Lumière Beauté</div>
+        <div class="logo-tagline">Clínica de Estética</div>
+      </div>
+
+      <nav>
+        <!--PROCURAR IMAGENS DE ICONES PARA O  MENU -->
+        <a class="active" href="index.html">Início </a>
+        <a class="active" href="quesomos.html">Quem Somos</a>
+        <a class="active" href="servicos.html">Serviços</a>
+        <a class="active" href="agendaConsulta.html">Contato </a>
+      </nav>
+
+      <div class="sidebar-footer">© 2025 Lumière Beauté</div>
+    </aside>
+
+    <!-- MAIN -->
+    <div id="main">
+      <!-- CONTATO -->
+      <div class="page" id="page-contato">
+        <div class="page-header">
+          <h2>Contato &amp; Agendamento</h2>
+          <div class="divider-rose"></div>
+          <p>Entre em contato ou agende sua consulta</p>
+        </div>
+        <div class="contato-grid">
+          <div class="contato-info">
+            <div class="info-item">
+              <div class="info-icon">
+                <img src="imagem/icones/celular.png" width="20px">
+              </div>
+              <div>
+                <div class="info-label">Telefone / WhatsApp</div>
+                <div class="info-value">(11) 1234-5678</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <img src="imagem/icones/e-mail.png" width="20px" alt="">
+              </div>
+              <div>
+                <div class="info-label">E-mail</div>
+                <div class="info-value">contato@lumierebeaute.com.br</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <img src="imagem/icones/como.png" alt="" width="20px">
+              </div>
+              <div>
+                <div class="info-label">Endereço</div>
+                <div class="info-value">Rua da saude , 123 — Jd. Paulista
+                  <small>São Paulo · SP · 1234-000</small>
+                </div>
+              </div>
+            </div>
+            <div class="horarios-card">
+              <div class="horarios-title">Horários de Atendimento</div>
+              <div class="horario-grid">
+                <div class="horario-item">
+                  <div class="dia">Segunda — Sexta</div>
+                  <div class="hora">09h às 20h</div>
+                </div>
+                <div class="horario-item">
+                  <div class="dia">Sábado</div>
+                  <div class="hora">09h às 16h</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="form-card" onsubmit="enviarForm(event)">
+            <h3>Solicitar Agendamento</h3>
+
+            <div class="form-group">
+              <label>NOME COMPLETO</label>
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </div>
+
+            <div class="form-group">
+              <label>TELEFONE / WHATSAPP</label>
+              <input type="text" name="telefone" placeholder="(11) 00000-0000" required />
+            </div>
+
+            <div class="form-group">
+              <label>SERVIÇO DE INTERESSE</label>
+              <select name="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option>Limpeza de Pele Profunda</option>
+                <option>Peeling Químico</option>
+                <option>Massagem Modeladora</option>
+                <option>Radiofrequência Facial</option>
+                <option>Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>MENSAGEM (OPCIONAL)</label>
+              <textarea name="mensagem" placeholder="Conte um pouco sobre o que você busca..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">Enviar Solicitação</button>
+
+            <div class="toast" id="toast">
+              Solicitação enviada! Entraremos em contato em breve.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!-- /Fimmain -->
+
+  <script src="funcao.js"></script>
+</body>
+
+</html>

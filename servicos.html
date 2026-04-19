@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lumière Beauté — Clínica de Estética</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+        <!-- MENU LATERAL -->
+        <aside id="sidebar">
+            <div class="sidebar-logo">
+                <div class="logo-simbolo">
+                    LB
+                    <circle cx="12" cy="9" r="2.5" />
+                </div>
+                <div class="logo-name">Lumière Beauté</div>
+                <div class="logo-tagline">Clínica de Estética</div>
+            </div>
+
+            <nav>
+                <!--PROCURAR IMAGENS DE ICONES PARA O  MENU -->
+                <a class="active" href="index.html">Início </a>
+                <a class="active" href="quesomos.html">Quem Somos</a>
+                <a class="active" href="servicos.html">Serviços</a>
+                <a class="active" href="agendaConsulta.html">Contato </a>
+            </nav>
+
+            <div class="sidebar-footer">© 2025 Lumière Beauté</div>
+        </aside>
+
+        <!-- MAIN -->
+        <div id="main">
+            <div class="topbar">
+                <span class="topbar-title" id="topbar-title">Bem-vinda à Lumière Beauté</span>
+                <div class="topbar-actions">
+                    <button class="btn-agend" onclick="agconsulta() ">Agendar Consulta</button>
+                </div>
+            </div>
+            <!-- SERVIÇOS -->
+            <div class="page" id="page-servicos">
+                <div class="page-header">
+                    <h2>Nossos Serviços</h2>
+                    <div class="divider-rose"></div>
+                    <p>Tratamentos pensados para revelar a melhor versão de você</p>
+                </div>
+                <div class="servicos-grid">
+                    <div class="servico-card">
+                        <div class="servico-top">
+                            <div class="servico-icon">
+                                <img src="imagem/icones/ame (1).png" width="25px" alt="">
+                            </div>
+                            <span class="price-badge">A partir de R$ 180</span>
+                        </div>
+                        <h3>Limpeza de Pele Profunda</h3>
+                        <p>Higienização completa com extração, esfoliação e máscara calmante. Ideal para desobstruir os
+                            poros e renovar a pele.</p>
+                        <span class="servico-tag">Facial</span>
+                        <span class="servico-tag">60 min</span>
+                        <button class="btn-agendar" onclick="agconsulta()">Agendar</button>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-top">
+                            <div class="servico-icon">
+                                <img src="imagem/icones/oculos.png" width="25px" alt="">
+                            </div>
+                            <span class="price-badge">A partir de R$ 320</span>
+                        </div>
+                        <h3>Peeling Químico</h3>
+                        <p>Renovação celular com ácidos controlados para uniformizar manchas, textura e iluminar o tom
+                            da pele.</p>
+                        <span class="servico-tag">Facial</span>
+                        <span class="servico-tag">45 min</span>
+                        <button class="btn-agendar" onclick="agconsulta()">Agendar</button>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-top">
+                            <div class="servico-icon">
+                                <img src="imagem/icones/coracao.png" width="25px" alt="">
+                            </div>
+                            <span class="price-badge">A partir de R$ 250</span>
+                        </div>
+                        <h3>Massagem Modeladora</h3>
+                        <p>Técnica manual que ativa a circulação, reduz medidas e melhora o contorno corporal com
+                            resultados progressivos.</p>
+                        <span class="servico-tag">Corporal</span>
+                        <span class="servico-tag">60 min</span>
+                        <button class="btn-agendar" onclick="agconsulta()">Agendar</button>
+                    </div>
+                    <div class="servico-card">
+                        <div class="servico-top">
+                            <div class="servico-icon">
+                                <img src="imagem/icones/balao-de-ar-quente.png" width="25PX" alt="">
+                            </div>
+                            <span class="price-badge">A partir de R$ 450</span>
+                        </div>
+                        <h3>Radiofrequência Facial</h3>
+                        <p>Estimula o colágeno e firmeza da pele com tecnologia de ondas de rádio. Efeito lifting sem
+                            procedimento invasivo.</p>
+                        <span class="servico-tag">Tecnologia</span>
+                        <span class="servico-tag">50 min</span>
+                        <button class="btn-agendar" onclick="agconsulta()">Agendar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /main -->
+ 
+
+    <script src="funcao.js"></script>
+</body>
+
+</html>
